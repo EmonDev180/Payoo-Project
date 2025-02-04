@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo-Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <!-- navber -->
+        <div class=" flex justify-center items-center mt-4 ">
+            <div class="w-[450px] h-[600px] bg-[rgb(217,213,213)] ">
+                <div class="flex justify-between items-center p-2 min-h-[84px] w-full  bg-gray-200">
+                    <div class="flex justify-center items-center gap-2">
+                        <div>
+                            <img class="w-[80px] h-[80px]" src="./images/payoo.png" alt="">
+                        </div>
+                        <div>
+                            <h1 id="current-account" class="text-2xl font-bold">1000</h1>
+                            <p class="text-gray-500">Another account</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-primary">Logout</button>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+                    <p class="p-2">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                </div>
+
+                    <div class="flex justify-around">
+                        <button id="btn-show-add-money" class="btn">Add Money</button>
+                        <button id="btn-show-cush-out" class="btn ">CushOut</button>
+                    </div>
+
+                <!-- add mony Form start -->
+                <div id="add-money-form" class="hero">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Add Amount</span>
+                                    </label>
+                                    <input id="input-add-money" type="text" placeholder="Add Amount"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Pin</span>
+                                    </label>
+                                    <input id="input-pin" type="password" placeholder="pin" class="input input-bordered"
+                                        required />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add money from end  -->
+
+                <!-- add cushOut -->
+                <div id="cush-out-form" class="hero hidden">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">cushOut</span>
+                                    </label>
+                                    <input id="input-cushOut" type="text" placeholder="Add Amount"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Pin</span>
+                                    </label>
+                                    <input id="input-cushOut-pin" type="password" placeholder="pin" class="input input-bordered"
+                                        required />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-cushOut" class="btn btn-primary">Cush Out</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add cushin -->
+
+
+            </div>
+        </div>
+
+        </div>
+        <!-- heading -->
+
+    </main>
+    <script src="./js/home.js"></script>
+    <script src="./js/cushOut.js"></script>
+    <script src="./js/feathers.js"></script>
+</body>
+
+</html>
